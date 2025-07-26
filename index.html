@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inventory Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Inventory Management</h1>
+    <form id="itemForm">
+      <input type="text" id="name" placeholder="Item name" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="number" id="quantity" placeholder="Quantity" required />
+      <button type="submit">Add Item</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Search items..." />
+
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Category</th><th>Quantity</th><th>Delete</th></tr>
+      </thead>
+      <tbody id="inventoryList"></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
